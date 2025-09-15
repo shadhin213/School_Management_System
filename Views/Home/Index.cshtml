@@ -1,0 +1,136 @@
+@{
+    ViewData["Title"] = "School Management System";
+}
+
+<!-- Hero Section -->
+<section class="hero-section bg-primary text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">Welcome to Our School Management System</h1>
+                <p class="lead mb-4">Streamline your school's administration, teaching, and learning processes with our comprehensive school management solution.</p>
+                <div class="d-flex gap-3">
+                    <a asp-controller="Account" asp-action="Login" class="btn btn-light btn-lg px-4">Login</a>
+                    <a asp-controller="Account" asp-action="Register" class="btn btn-outline-light btn-lg px-4">Register</a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="https://via.placeholder.com/600x400" alt="School Management System" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Why Choose Our System?</h2>
+            <p class="text-muted">Experience the difference with our comprehensive school management solution</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-lg bg-soft-primary text-primary rounded-circle mb-3 mx-auto">
+                            <i class="fas fa-user-graduate fa-2x"></i>
+                        </div>
+                        <h4>Student Management</h4>
+                        <p class="text-muted">Easily manage student records, attendance, and academic performance in one place.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-lg bg-soft-success text-success rounded-circle mb-3 mx-auto">
+                            <i class="fas fa-chalkboard-teacher fa-2x"></i>
+                        </div>
+                        <h4>Teacher Portal</h4>
+                        <p class="text-muted">Empower teachers with tools for lesson planning, grading, and communication.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-lg bg-soft-info text-info rounded-circle mb-3 mx-auto">
+                            <i class="fas fa-chart-line fa-2x"></i>
+                        </div>
+                        <h4>Analytics & Reports</h4>
+                        <p class="text-muted">Gain insights with comprehensive reports and analytics on school performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Ready to Get Started?</h2>
+        <p class="lead text-muted mb-4">Join thousands of schools that trust our platform for their management needs.</p>
+        <a asp-controller="Account" asp-action="Register" class="btn btn-primary btn-lg px-4">Create an Account</a>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">What Our Users Say</h2>
+            <p class="text-muted">Hear from our satisfied school administrators and teachers</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User">
+                            <div>
+                                <h5 class="mb-0">John Smith</h5>
+                                <small class="text-muted">School Principal</small>
+                            </div>
+                        </div>
+                        <p class="card-text">"This system has transformed how we manage our school. The attendance tracking and reporting features are exceptional."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User">
+                            <div>
+                                <h5 class="mb-0">Sarah Johnson</h5>
+                                <small class="text-muted">Math Teacher</small>
+                            </div>
+                        </div>
+                        <p class="card-text">"The gradebook and assignment management tools have saved me countless hours of work each week."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User">
+                            <div>
+                                <h5 class="mb-0">Michael Brown</h5>
+                                <small class="text-muted">IT Administrator</small>
+                            </div>
+                        </div>
+                        <p class="card-text">"The system is intuitive and easy to use. The support team is responsive and helpful whenever we need assistance."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

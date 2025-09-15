@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Parent Dashboard";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-warning text-dark">
+                    <h2>@ViewData["WelcomeMessage"]</h2>
+                </div>
+                <div class="card-body">
+                    <p>Welcome to your Parent Dashboard. Here you can monitor your child's academic progress and school activities.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">My Children</h5>
+                                    <p class="card-text">View information about your children and their progress.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Grades & Attendance</h5>
+                                    <p class="card-text">Monitor your child's grades and attendance records.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">School Calendar</h5>
+                                    <p class="card-text">View important dates and school events.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

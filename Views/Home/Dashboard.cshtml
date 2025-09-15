@@ -1,0 +1,140 @@
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "_Layout";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <h4 class="page-title">Dashboard</h4>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Welcome Card -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <img src="https://via.placeholder.com/100" class="avatar-lg rounded-circle" alt="profile-image">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h4 class="mb-1">Welcome, @ViewData["UserName"]!</h4>
+                            <p class="text-muted mb-0">Member since @ViewData["JoinDate"]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row mt-4">
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="mb-0">125</h4>
+                            <p class="text-muted mb-0">Total Students</p>
+                        </div>
+                        <div class="avatar-sm bg-soft-primary rounded">
+                            <i class="fas fa-user-graduate fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="mb-0">24</h4>
+                            <p class="text-muted mb-0">Total Teachers</p>
+                        </div>
+                        <div class="avatar-sm bg-soft-success rounded">
+                            <i class="fas fa-chalkboard-teacher fa-2x text-success"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="mb-0">15</h4>
+                            <p class="text-muted mb-0">Active Courses</p>
+                        </div>
+                        <div class="avatar-sm bg-soft-info rounded">
+                            <i class="fas fa-book fa-2x text-info"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="mb-0">5</h4>
+                            <p class="text-muted mb-0">Upcoming Events</p>
+                        </div>
+                        <div class="avatar-sm bg-soft-warning rounded">
+                            <i class="fas fa-calendar-alt fa-2x text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title mb-3">Recent Activity</h4>
+                    <div class="table-responsive">
+                        <table class="table table-centered table-nowrap table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Activity</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Today</td>
+                                    <td>New student registration</td>
+                                    <td><span class="badge bg-success">Completed</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-light">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Yesterday</td>
+                                    <td>New course added</td>
+                                    <td><span class="badge bg-info">In Progress</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-light">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2 days ago</td>
+                                    <td>System update</td>
+                                    <td><span class="badge bg-warning">Pending</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-light">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

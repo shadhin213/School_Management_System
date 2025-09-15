@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Student Dashboard";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h2>@ViewData["WelcomeMessage"]</h2>
+                </div>
+                <div class="card-body">
+                    <p>Welcome to your Student Dashboard. Here you can view your classes, assignments, and grades.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">My Schedule</h5>
+                                    <p class="card-text">View your class schedule and upcoming events.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">My Grades</h5>
+                                    <p class="card-text">Check your grades and academic progress.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Assignments</h5>
+                                    <p class="card-text">View and submit assignments before their due dates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
